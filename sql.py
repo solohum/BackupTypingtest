@@ -1,6 +1,3 @@
-import mysql.connector 
-
-
 import mysql.connector
 
 myconn = mysql.connector.connect(
@@ -9,4 +6,6 @@ myconn = mysql.connector.connect(
   password="yourpassword")
 
 cursor = myconn.cursor()
-cursor.execute(create database if not exists Typing test
+cursor.execute("create database if not exists typing_test;")
+cursor.execute("use database typing_test")
+cursor.execute("create table if not exists 
